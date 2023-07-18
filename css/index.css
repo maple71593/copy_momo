@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.board-w {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 頂部條 */
+.topbar {
+    background-color: rgb(224, 224, 224);
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+}
+
+.topbar-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.board-w nav{
+    margin:0 40px;
+}
+
+.board-w nav a {
+    padding: 0 10px;
+    border-right: 1px solid black;
+}
+.board-w nav a:hover{
+    padding: 0 10px;
+    color: rgb(228,5,128);
+    border-right: 1px solid rgb(228,5,128);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* logo 搜尋框 頁首 */
+.header-board .logo img{
+    width: 280px;
+}
+
+.header-board{
+    height: 200px;
+    margin: auto;
+    justify-content: space-between;
+}
+.header-board-input {
+    width: 500px;
+    margin-top: 50px;
+    
+}
+.header-board-input input{
+    width: 350px;
+    height: 30px;
+    border: 2px solid rgb(68,68,68);
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 10px;
+}
+.header-board-input button{
+    width: 85px;
+    height: 34px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    font-weight: 800;
+    border: 2px solid rgb(68,68,68);
+    border-radius:0px 20px 20px 0px;
+    margin-left: -5px;
+}
+.header-board-input div{
+    color: rgb(228,5,128);
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.header-board-input a{
+    border-right: 1px solid rgb(228,5,128);
+    padding-right:5px ;
+}
+.header-board-input a:hover{
+    border-right: 1px solid rgb(5, 42, 228);
+    color: rgb(5, 42, 228);
+    padding-right:5px ;
+}
+.header-board-input div> a:last-child{
+    border-right: 0px solid rgb(228,5,128);
+}
+.header-board-input div> a:first-child{
+    margin-left: 10px;
+}
+
+.off-3{
+    margin-top: 20px;
+    width: 380px;
+    height: 95px;
+    border-radius: 90px;
+    background-image: linear-gradient(to right, #fec5c5, #ff7676);
+    align-items: center;
+    justify-content: space-between;
+}
+.off-3 img{
+    height: 75px;
+}
+.off-3 div{
+    width: 60px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+.off-3 div::after{
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:10px solid #f8f6f6;
+    background-color: #fec5c5;
+    top: -10px;
+    right: -25px;
+}
+.class-bar-header{
+    flex-basis: 50%;
+    height: 30px;
+}
+.class-bar-header-value{
+    width: 108px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    padding:0px 50px;
+    background-color: rgb(102, 102, 102);
+}
+.class-bar-header i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+/* .class-bar-header-value::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    border-radius: 20px;
+    top: 15px;
+    left: 15px;
+    background-color: #ffffff;
+}
+.class-bar-header::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    border-radius: 20px;
+    top: 20px;
+    left: 15px;
+    background-color: #ffffff;
+}
+.class-bar-header::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    border-radius: 20px;
+    top: 26px;
+    left: 15px;
+    background-color: #ffffff;
+} */
+.little-bar{
+    margin-left: auto;
+    height: 10px;
+    line-height: 33px;
+}
+.little-bar ul{
+    width: 640px;
+    list-style-type: none;
+    justify-content: space-between;
+    
+}
+.little-bar li{
+    text-align: center;
+    width: 75px;
+    font-size: 15px;
+    font-weight: 800;
+    color:rgb(102, 102, 102);
+    background-color: rgb(200, 200, 200);
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/* 宣傳及商品分類 */
+.banner{
+    /* background-color: aqua; */
+}
+.banner-pt{
+    position: relative;
+    background-color: aqua;
+}
+.class-item{
+    width: 208px;
+    background-color: rgb(102,102,102);
+    position: absolute;
+    top: 0;
+    left: 120px;
+    z-index: 1;
+    box-shadow: 0px -0px 5px rgba(0, 0, 0, 0.5);
+}
+.class-item div{
+    width: 208px;
+    background-color: rgb(102,102,102);
+    padding: 9px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+.class-item div:hover{
+    width: 208px;
+    background-color: rgb(228,5,128);
+    padding: 8px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.class-item div:first-child{
+    margin-top: 5px;
+}
+
+.bottom-bar{
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.banner-swich{
+    position: relative;
+}
+
+.banner-swich img{
+    width: 880px;
+    margin-left: 328px;
+    left: 328px;
+    z-index: 0;
+}
+.banner-btn{
+    width: 40px;
+    height: 80px;
+    color: #f8f6f6;
+    position: absolute;
+    top: 150px;
+    left: 328px;
+    border: 0;
+    background-color: rgba(184, 183, 185,0.5);
+    border-radius: 0px 5px 5px 0px;
+}
+.banner-btn2{
+    width: 40px;
+    height: 80px;
+    color: #f8f6f6;
+    position: absolute;
+    top: 150px;
+    left: 1168px;
+    border: 0;
+    background-color: rgba(184, 183, 185,0.5);
+    border-radius: 5px 0px 0px 5px;
+} 
+.today_{
+    width: 200px;
+    padding:10px 1px;
+    justify-content: space-between;
+    background-color: #b5b5b5;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 10px;
+}
+.today_ p {
+    font-size: 20px;
+    font-weight: 800;
+    color: #f8f6f6;
+}
+.today_ div button{
+    width: 20px;
+    height: 20px;
+    color: #f8f6f6;
+    background-color: #5f5f5f;
+    border: 0;
+}
+.today_ img{
+    width: 200px;
+    margin: 1px 0px;
+
+}
+
+.banner-lost-bar{
+
+}
+.banner-lost-bar img{
+    margin-left: 330px;
+    height: 120px;
+}
+.banner-lost-bar-cake{
+    width: 300px;
+    height: 120px;
+    background-color: #f8f6f6;
+    margin: 0px 5px;
+}
+.banner-lost-bar-cake p{
+    background-color: rgb(255,97,98);
+    padding: 3px;
+    color: white;
+    font-size: 17px;
+    font-weight: 550;
+}

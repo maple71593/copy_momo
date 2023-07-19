@@ -1,18 +1,22 @@
 * {
     padding: 0;
     margin: 0;
+    font-size: 0;
 }
 
-.board-w {
+.float-left{
+    float: left;
+}
+
+.container {
     width: 1280px;
     margin: auto;
-    display: flex;
+    vertical-align: top;
 }
 
-.flex {
+.flex{
     display: flex;
     flex-wrap: wrap;
-    align-items: center
 }
 
 a{
@@ -29,20 +33,19 @@ a{
 }
 
 .topbar-board {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.board-w nav{
+.topbar-board nav{
     margin:0 40px;
 }
 
-.board-w nav a {
+.topbar-board nav a {
+    font-size: 15px;
     padding: 0 10px;
     border-right: 1px solid black;
 }
-.board-w nav a:hover{
+.topbar-board nav a:hover{
     padding: 0 10px;
     color: rgb(228,5,128);
     border-right: 1px solid rgb(228,5,128);
@@ -85,28 +88,32 @@ a{
 .header-board-input input{
     width: 350px;
     height: 30px;
+    font-size: 15px;
     border: 2px solid rgb(68,68,68);
     border-radius: 20px 0px 0px 20px;
     padding-left: 10px;
 }
 .header-board-input button{
     width: 85px;
-    height: 34px;
+    height: 33px;
     background-color: rgb(68, 68, 68);
     color: white;
-    font-weight: 800;
     border: 2px solid rgb(68,68,68);
+    font-size: 15px;
+    font-weight: 800;
     border-radius:0px 20px 20px 0px;
     margin-left: -5px;
+    vertical-align: top;
 }
 .header-board-input div{
     color: rgb(228,5,128);
-    font-size: 14px;
+    font-size: 15px;
     margin-left: 5px;
     margin-top: 10px;
 }
 
 .header-board-input a{
+    font-size: 15px;
     border-right: 1px solid rgb(228,5,128);
     padding-right:5px ;
 }
@@ -152,11 +159,15 @@ a{
     right: -25px;
 }
 .class-bar-header{
-    flex-basis: 50%;
-    height: 30px;
+    flex-basis: 45%;
 }
-.class-bar-header-value{
-    width: 108px;
+
+.class-bar-header img{
+    width: 200px;
+    margin-top: 35px;
+}
+/* .class-bar-header-value{
+    width: 100px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -164,12 +175,12 @@ a{
     font-size: 14px;
     font-weight: 800;
     padding:0px 50px;
-    background-color: rgb(102, 102, 102);
-}
-.class-bar-header i{
+    background-color: rgb(80, 80, 80);
+} */
+/* .class-bar-header i{
     margin-right: 5px;
     font-size: 18px;
-}
+} */
 /* .class-bar-header-value::after{
     content: '';
     position: absolute;
@@ -201,56 +212,71 @@ a{
     background-color: #ffffff;
 } */
 .little-bar{
-    margin-left: auto;
-    height: 10px;
-    line-height: 33px;
+    /* margin-top: 40px; */
+    align-items: flex-end;
 }
 .little-bar ul{
     width: 640px;
     list-style-type: none;
+    margin-top: 35px;
+    margin-right: 8px;
     justify-content: space-between;
     
 }
 .little-bar li{
     text-align: center;
     width: 75px;
+    padding: 10px 0px;
     font-size: 15px;
     font-weight: 800;
     color:rgb(102, 102, 102);
     background-color: rgb(200, 200, 200);
     border-radius: 5px 5px 0px 0px;
 }
+.little-bar li a{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    color:rgb(102, 102, 102);
+}
 
 
 /* 宣傳及商品分類 */
-.banner{
-    /* background-color: aqua; */
-}
+
 .banner-pt{
     position: relative;
     background-color: aqua;
 }
 .class-item{
-    width: 208px;
+    width: 200px;
     background-color: rgb(102,102,102);
-    position: absolute;
     top: 0;
     left: 120px;
-    z-index: 1;
     box-shadow: 0px -0px 5px rgba(0, 0, 0, 0.5);
 }
 .class-item div{
-    width: 208px;
+    width: 200px;
     background-color: rgb(102,102,102);
-    padding: 9px 0;
+    padding: 10px 0;
     font-size: 14px;
     color: white;
     text-align: center;
 }
+
+.class-item::before{
+    content: '';
+    position: absolute;
+    top:-5px;
+    width: 200px;
+    height: 5px;
+    background-color: rgba(81,81,81);
+    box-shadow: 0px 10px 10px rgb(27, 27, 27);
+}
+
 .class-item div:hover{
-    width: 208px;
+    width: 200px;
     background-color: rgb(228,5,128);
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 14px;
     color: white;
     text-align: center;
@@ -266,21 +292,22 @@ a{
 
 .banner-swich{
     position: relative;
+    width: 880px;
+    height: 400px;
 }
 
 .banner-swich img{
     width: 880px;
-    margin-left: 328px;
     left: 328px;
-    z-index: 0;
 }
 .banner-btn{
     width: 40px;
     height: 80px;
     color: #f8f6f6;
     position: absolute;
+    font-size: 150px;
     top: 150px;
-    left: 328px;
+    left: 0px;
     border: 0;
     background-color: rgba(184, 183, 185,0.5);
     border-radius: 0px 5px 5px 0px;
@@ -288,57 +315,73 @@ a{
 .banner-btn2{
     width: 40px;
     height: 80px;
+    font-size: 150px;
     color: #f8f6f6;
     position: absolute;
     top: 150px;
-    left: 1168px;
+    left: 840px;
     border: 0;
     background-color: rgba(184, 183, 185,0.5);
     border-radius: 5px 0px 0px 5px;
 } 
-.today_{
-    width: 200px;
-    padding:10px 1px;
+.today-s{
+    width: 198px;
+    height: 375px;
+    padding:10px 0px;
     justify-content: space-between;
     background-color: #b5b5b5;
     border: 1px solid rgb(102, 102, 102);
     border-radius: 10px;
 }
-.today_ p {
+.today-s p {
     font-size: 20px;
     font-weight: 800;
     color: #f8f6f6;
 }
-.today_ div button{
+.today-s div button{
+    margin: 5px;
     width: 20px;
     height: 20px;
+    font-size: 15px;
     color: #f8f6f6;
     background-color: #5f5f5f;
     border: 0;
 }
-.today_ img{
-    width: 200px;
+.today-s img{
+    width: 190px;
     margin: 1px 0px;
 
 }
 
 .banner-lost-bar{
-
+    width: 1080px;
+    height: 150px;
+    background-color: #5f5f5f;
+    vertical-align: top;
+    /* margin: 0px 10px 0px 210px; */
+    font-size: 0px;
 }
 .banner-lost-bar img{
-    margin-left: 330px;
-    height: 120px;
+    width: 540px;
 }
 .banner-lost-bar-cake{
-    width: 300px;
-    height: 120px;
+    width: 250px;
+    height: 150px;
     background-color: #f8f6f6;
-    margin: 0px 5px;
+    margin-left: 12px;
 }
+
+/* .banner-lost-bar-cake:last-child{
+    width: 250px;
+    height: 150px;
+    background-color: #f8f6f6;
+    margin: 0px 0px 0px 10px;
+} */
 .banner-lost-bar-cake p{
+    height: 37px;
+    line-height: 37px;
     background-color: rgb(255,97,98);
-    padding: 3px;
     color: white;
     font-size: 17px;
-    font-weight: 550;
+    font-weight: 600;
 }

@@ -4,14 +4,24 @@
     font-size: 0;
 }
 
+.float-clean{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .float-left{
     float: left;
+}
+
+.float-right{
+    float: right;
 }
 
 .container {
     width: 1280px;
     margin: auto;
-    vertical-align: top;
+    vertical-align: top; 
 }
 
 .flex{
@@ -164,7 +174,8 @@ a{
 
 .class-bar-header img{
     width: 200px;
-    margin-top: 35px;
+    margin-top: 40px;
+    z-index: 0;
 }
 /* .class-bar-header-value{
     width: 100px;
@@ -221,7 +232,7 @@ a{
     margin-top: 35px;
     margin-right: 8px;
     justify-content: space-between;
-    
+    z-index: 1;
 }
 .little-bar li{
     text-align: center;
@@ -244,47 +255,100 @@ a{
 /* 宣傳及商品分類 */
 
 .banner-pt{
-    position: relative;
     background-color: aqua;
 }
 .class-item{
     width: 200px;
     background-color: rgb(102,102,102);
-    top: 0;
-    left: 120px;
-    box-shadow: 0px -0px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 8px rgba(81,81,81) inset;
+    position: relative;
 }
-.class-item div{
+.class-item nav{
     width: 200px;
-    background-color: rgb(102,102,102);
     padding: 10px 0;
     font-size: 14px;
     color: white;
     text-align: center;
 }
 
-.class-item::before{
-    content: '';
-    position: absolute;
-    top:-5px;
-    width: 200px;
-    height: 5px;
-    background-color: rgba(81,81,81);
-    box-shadow: 0px 10px 10px rgb(27, 27, 27);
-}
 
-.class-item div:hover{
+.class-item nav:hover {
     width: 200px;
     background-color: rgb(228,5,128);
     padding: 10px 0;
     font-size: 14px;
     color: white;
     text-align: center;
-    z-index: 1;
 }
-.class-item div:first-child{
+.class-item nav:first-child{
     margin-top: 5px;
 }
+
+.class-item nav:hover .class-side-item{
+    display: block;
+}
+
+.class-side-item{
+    width: 1080px;
+    background-color:rgb(170, 125, 125);
+    border:3px solid rgb(228,5,128);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    z-index: 2;
+    display: none;
+}
+
+.class-side-item dl {
+    font-size: 15px;
+    color: aliceblue;
+    justify-content: left;
+    text-align: center;
+}
+
+.class-side-item dl dt{
+    padding: 10px 20px;
+    width: 100px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: rgb(135, 103, 166);
+    
+}
+
+.class-side-item dl:first-child dt{
+    padding: 10px 20px;
+    width: 100px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: rgb(135, 103, 166);
+    border-radius: 10px 0px 0px 0px;
+    
+}
+
+.class-side-item dl dd{
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.class-side-item dl dd a{
+    font-size: 15px;
+    color: aliceblue;
+    margin: 5px;
+    padding-right: 10px;
+    border-right: 1px solid rgb(102,102,102);
+}
+
+.class-side-item dl a img{
+    height: 50px;
+}
+
+
+
 
 .bottom-bar{
     border-bottom: 1px solid rgb(217, 217, 217);
@@ -294,11 +358,11 @@ a{
     position: relative;
     width: 880px;
     height: 400px;
+    z-index: 1;
 }
 
 .banner-swich img{
     width: 880px;
-    left: 328px;
 }
 .banner-btn{
     width: 40px;
